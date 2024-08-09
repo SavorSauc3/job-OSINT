@@ -1,0 +1,99 @@
+/* src/SearchBar.css */
+.results-card {
+    max-height: 400px; /* Adjust height as needed */
+    overflow-y: auto; /* Make it scrollable if content overflows */
+  }
+  
+  /* Styles for individual job items */
+  .job-item {
+    border-left: 5px solid #007bff; /* Blue left border for visual separation */
+    margin-bottom: 10px; /* Space between items */
+    background-color: #343a40; /* Dark background for each item */
+  }
+  
+  .job-title {
+    color: #e83e8c; /* Pink color for job title */
+  }
+  
+  .job-company {
+    color: #17a2b8; /* Teal color for company name */
+  }
+  
+  .job-level {
+    color: #28a745; /* Green color for job level */
+  }
+
+  .job-description {
+    white-space: pre-line; /* Preserves line breaks */
+    line-height: 1.6;      /* Increases line height for better readability */
+    word-break: break-word; /* Ensures long words break correctly */
+  }
+  
+  .job-description h3, /* Adjusts spacing for section headers */
+  .job-description h4, /* Adjusts spacing for smaller headers */
+  .job-description p {  /* Adjusts spacing for paragraphs */
+    margin-top: 0;
+    margin-bottom: 0.5rem; /* Adjust this value to control the spacing */
+  }
+  
+  .job-description br {
+    content: ""; /* Handles the <br> tags correctly */
+  }
+
+  .job-description {
+    max-height: 56vh; /* Adjust the height as needed */
+    overflow-y: auto;  /* Add vertical scroll if content exceeds max-height */
+    white-space: pre-wrap; /* Preserve newlines and formatting */
+  }
+  
+  .results-card {
+    max-height: 65vh; /* Adjust the height as needed */
+    display: flex;
+    flex-direction: column; /* Arrange content in column layout */
+  }
+  
+  .results-card .card-title {
+    margin-bottom: 1rem; /* Space between title and list */
+    overflow-y: hidden;
+  }
+  
+  .results-list {
+    overflow-y: auto;  /* Add vertical scroll to the list container */
+    flex-grow: 1;      /* Allow the list container to grow and fill available space */
+  }
+
+  /* Scrollbar container */
+::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+    height: 12px; /* Height of the horizontal scrollbar */
+  }
+  
+  /* Scrollbar track (progress bar) */
+  ::-webkit-scrollbar-track {
+    background: #333; /* Track color */
+  }
+  
+  /* Scrollbar handle (thumb) */
+  ::-webkit-scrollbar-thumb {
+    background: #555; /* Handle color */
+    border-radius: 6px; /* Round the handle */
+  }
+  
+  /* Scrollbar handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #777; /* Handle color on hover */
+  }
+
+  /* CSS for loading spinner and darkening effect */
+.transition-effect {
+    transition: opacity 0.5s ease;
+  }
+  
+  .loading {
+    opacity: 0.5;
+  }
+  
+  /* Ensure the spinner appears correctly */
+  .spinner-border {
+    margin-right: 5px;
+  }
