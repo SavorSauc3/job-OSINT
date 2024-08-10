@@ -22,7 +22,7 @@
   "test": "react-scripts test",
   "eject": "react-scripts eject",
   "vercel-build": "concurrently \"npm run start-backend\" \"npm start\"",
-  "start-backend": "node ./dist/main.exe"
+  "start-backend": "./dist/main.exe"
   },
   "eslintConfig": {
     "extends": [
